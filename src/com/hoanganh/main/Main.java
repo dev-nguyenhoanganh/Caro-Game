@@ -3,7 +3,7 @@
  */
 package com.hoanganh.main;
 
-import java.util.Arrays;
+import Sample.MainProgram;
 
 /**
  * @author Hoang Anh
@@ -19,11 +19,9 @@ public class Main {
 	public static void main(String[] args) {
 //		GUI gui = new GUI();
 //		gui.setVisible(true);
-		
-		String arr[][] = new String[15][15];
-		for (int j = 0; j < arr.length; j++) {
-			Arrays.fill(arr[j], " ");
-			System.out.println(Arrays.toString(arr[j]));
-		}
+
+		MainProgram.InitGUI();
+		MainProgram.InitEventListener();
+		MainProgram.GamePlaying();
 	}
 }

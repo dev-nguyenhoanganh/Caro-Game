@@ -9,7 +9,7 @@ package com.hoanganh.gui.panel;
  * @version 1.0
  */
 @SuppressWarnings("serial")
-public class Menu extends BasePanel {
+public class MenuPanel extends BasePanel {
 
 	@Override
 	public void init() {

@@ -5,7 +5,9 @@ package com.hoanganh.gui.frame;
 
 import javax.swing.JFrame;
 
+import com.hoanganh.common.Constant;
 import com.hoanganh.gui.icommon.ICommon;
+import com.hoanganh.gui.panel.CaroTablePanel;
 
 /**
  * @author Hoang Anh
@@ -14,7 +16,9 @@ import com.hoanganh.gui.icommon.ICommon;
  */
 @SuppressWarnings("serial")
 public class GUI extends JFrame implements ICommon{
-
+	
+	private CaroTablePanel caroTablePanel;
+	
 	/**
 	 * 
 	 */
@@ -26,14 +30,18 @@ public class GUI extends JFrame implements ICommon{
 
 	@Override
 	public void init() {
-		// TODO Auto-generated method stub
+		setTitle("Caro Game");
+		setResizable(true);
+		setSize(Constant.WIDTH, Constant.HEIGHT);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 	}
 
 	@Override
 	public void addComponent() {
-		// TODO Auto-generated method stub
-		
+		caroTablePanel = new CaroTablePanel();
+		add(caroTablePanel);
 	}
 
 	@Override
